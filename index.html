@@ -4,11 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e30045d648.js" crossorigin="anonymous"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bg-c': '#B68C5A',
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    *{
+        font-family: 'EB Garamond', serif;
+    }
+    .a{
+        display: none;
+    }
+</style>
+
 </head>
 <body>
     
 
-<header></header>
+<header class="container mx-auto my-5">
+
+<nav class="flex items-center justify-between ">
+
+<div>
+    <figure><img src="./images/logo2.png" alt=""></figure>
+</div>
+
+<div class="flex gap-7 font-medium text-base hidden md:block">
+    <a href="">Home</a>
+
+             <a href="">Services
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>
+               </a>
+
+    <a href="">Cases 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>
+    </a>
+
+    <a href="">Blog
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>          
+    </a>
+
+    <a href="">Contact Us
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>
+         
+    </a>
+</div>
+
+<div class="hidden md:block">
+    <button class="btn font-semibold text-xl bg-bg-c text-white opacity-100">Free Consultation</button>
+</div>
+
+
+    </nav>
+    <div class="">
+        <figure><i class="fa-solid fa-bars translate-x-[400px] -translate-y-6"></i></figure>
+        <ul class=" space-y-2 hidden md:hidden ">
+            <a href="" class="block">Home</a>
+    
+            <a href=""class="block">Services
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+           <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+         </svg>
+              </a>
+    
+    <a href=""class="block">Cases 
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+           <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+         </svg>
+    </a>
+    
+    <a href=""class="block">Blog
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+           <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+         </svg>          
+    </a>
+    
+    <a href=""class="block">Contact Us
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+           <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+         </svg>
+        
+    </a>
+        </ul>
+    </div>
+
+             
+</header>
 
 
 
