@@ -30,6 +30,10 @@
     .a{
         display: none;
     }
+    .gradient{
+      border-radius: 8px;
+background:linear-gradient(180deg, #111 0%, rgba(17, 17, 17, 0.00) 100%) ;
+    }
 </style>
 
 </head>
@@ -44,10 +48,10 @@
     <figure><img src="./images/logo2.png" alt=""></figure>
 </div>
 
-<div class="flex gap-7 font-medium text-base hidden md:block">
+<div class="flex space-x-4 font-medium text-base hidden md:block">
     <a href="">Home</a>
 
-             <a href="">Services
+             <a href="" class="hover:text-red-500 duration-1000">Services
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
           </svg>
@@ -74,13 +78,13 @@
 </div>
 
 <div class="hidden md:block">
-    <button class="btn font-semibold text-xl bg-bg-c text-white opacity-100">Free Consultation</button>
+    <button class="p-2 rounded-xl  font-semibold text-xl bg-bg-c text-white opacity-100 hover:bg-transparent border border-bg-c hover:text-bg-c duration-500">Free Consultation</button>
 </div>
 
 
     </nav>
     <div class="">
-        <figure><i class="fa-solid fa-bars translate-x-[400px] -translate-y-6"></i></figure>
+        <figure><i class="md:hidden fa-solid fa-bars translate-x-[400px] -translate-y-6"></i></figure>
         <ul class=" space-y-2 hidden md:hidden ">
             <a href="" class="block">Home</a>
     
@@ -111,7 +115,35 @@
         </ul>
     </div>
 
-             
+             <!-- banner section -->
+             <section>
+
+<div class="bg-[url(./images/banner.png)] text-white bg-no-repeat bg-cover bg-center w-full h-[550px] my-10 ">
+
+  
+
+    <div class="flex justify-center items-center h-full  gradient ">
+
+      <div class="max-w-[50%] text-center space-y-5 ">
+        <h1 class="font-extrabold text-6xl">We Provide Effective Legal Solutions</h1>
+      <p class="font-medium text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+      
+    <div>
+      <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-xs outline-none text-black" />
+      <button class="py-3 rounded-xl ml-3 px-6 outline-none bg-bg-c font-bold text-base">Search</button>
+    </div>
+    
+      </div>
+    
+     </div>
+
+ 
+  
+  
+</div>
+
+             </section>
+             <!-- banner section end -->
 </header>
 
 
@@ -123,7 +155,26 @@
 
 
 
-<main></main>
+<main class="container mx-auto my-5">
+<div class="text-center flex flex-col items-center space-y-5 my-20">
+  <h2 class="font-extrabold text-4xl ">The Legal Practice Area</h2>
+  <p class="font-normal text-base w-[40%]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+</div>
+
+<!-- legal grid card -->
+<section class="grid grid-cols-1 md:grid-cols-3">
+
+<div class=" flex flex-col items-center justify-center text-center space-y-2 border-b border-black pb-3">
+  <figure><img src="./images/business.png" alt=""></figure>
+  <h2 class="font-extrabold text-3xl">Business Law</h2>
+  <p class="text-base font-medium w-[65%]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+  <img src="./images/Frame.png" class="w-[9%]" alt="">
+</div>
+
+</section>
+
+</main>
 
 
 
