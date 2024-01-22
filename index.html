@@ -29,6 +29,7 @@
     }
     .a{
         display: none;
+        box-sizing: border-box;
     }
     .gradient{
       border-radius: 8px;
@@ -45,7 +46,8 @@ background:linear-gradient(180deg, #111 0%, rgba(17, 17, 17, 0.00) 100%) ;
 <nav class="flex items-center justify-between ">
 
 <div>
-    <figure><img src="./images/logo2.png" alt=""></figure>
+    <figure><img src="./images/logo2.png" alt="" class="
+     w-2/3 ml-5 md:w-full"></figure>
 </div>
 
 <div class="flex space-x-4 font-medium text-base hidden md:block">
@@ -84,7 +86,7 @@ background:linear-gradient(180deg, #111 0%, rgba(17, 17, 17, 0.00) 100%) ;
 
     </nav>
     <div class="">
-        <figure><i class="md:hidden fa-solid fa-bars translate-x-[400px] -translate-y-6"></i></figure>
+        <figure><i class="md:hidden fa-solid fa-bars translate-x-[275px] -translate-y-6"></i></figure>
         <ul class=" space-y-2 hidden md:hidden ">
             <a href="" class="block">Home</a>
     
@@ -115,27 +117,31 @@ background:linear-gradient(180deg, #111 0%, rgba(17, 17, 17, 0.00) 100%) ;
         </ul>
     </div>
 
+
+
+
              <!-- banner section -->
              <section>
 
-<div class="bg-[url(./images/banner.png)] text-white bg-no-repeat bg-cover bg-center w-full h-[550px] my-10 ">
+<div class="bg-[url(./images/banner.png)] text-white bg-no-repeat bg-cover bg-center w-[100%] h-[550px] my-10 ">
 
   
 
     <div class="flex justify-center items-center h-full  gradient ">
 
-      <div class="max-w-[50%] text-center space-y-5 ">
-        <h1 class="font-extrabold text-6xl">We Provide Effective Legal Solutions</h1>
+      <div class="max-w-[90%] md:max-w-[50%] text-center space-y-5 ">
+        <h1 class="font-extrabold text-3xl md:text-6xl">We Provide Effective Legal Solutions</h1>
       <p class="font-medium text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
       
-    <div>
-      <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-xs outline-none text-black" />
-      <button class="py-3 rounded-xl ml-3 px-6 outline-none bg-bg-c font-bold text-base">Search</button>
+    <div class="space-y-2">
+      <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-xs outline-none text-black " />
+      <button class="py-3 rounded-xl ml-3 px-6 outline-none bg-bg-c font-bold text-base ">Search</button>
     </div>
     
       </div>
     
      </div>
+   
 
  
   
@@ -155,21 +161,36 @@ background:linear-gradient(180deg, #111 0%, rgba(17, 17, 17, 0.00) 100%) ;
 
 
 
-<main class="container mx-auto my-5">
+<main class="max-w-[78%] mx-auto my-5">
 <div class="text-center flex flex-col items-center space-y-5 my-20">
   <h2 class="font-extrabold text-4xl ">The Legal Practice Area</h2>
   <p class="font-normal text-base w-[40%]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
 
 </div>
 
-<!-- legal grid card -->
+<!-- legal grid card line one-1 -->
+
 <section class="grid grid-cols-1 md:grid-cols-3">
 
-<div class=" flex flex-col items-center justify-center text-center space-y-2 border-b border-black pb-3">
+<div class=" flex flex-col items-center justify-center text-center space-y-2 border-b border-black pb-3 py-14 ">
   <figure><img src="./images/business.png" alt=""></figure>
   <h2 class="font-extrabold text-3xl">Business Law</h2>
   <p class="text-base font-medium w-[65%]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-  <img src="./images/Frame.png" class="w-[9%]" alt="">
+  <img src="./images/Frame.png" class="w-[9%] pb-10 pt-5" alt="">
+</div>
+
+<div class=" flex flex-col items-center justify-center text-center space-y-2 border  border-black pb-3 py-14  bg-gradient-to-t from-[#fffefe] to-[#d7d5d5]">
+  <figure><img src="./images/criminal.png" alt=""></figure>
+  <h2 class="font-extrabold text-3xl">Criminal Law</h2>
+  <p class="text-base font-medium w-[65%]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+  <img src="./images/Frame.png" class="w-[9%] pb-10 pt-5" alt="">
+</div>
+
+<div class=" flex flex-col items-center justify-center text-center space-y-2 border-b border-black pb-3 py-14 ">
+  <figure><img src="./images/child.png" alt=""></figure>
+  <h2 class="font-extrabold text-3xl">Child Support</h2>
+  <p class="text-base font-medium w-[65%]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+  <img src="./images/Frame.png" class="w-[9%] pb-10 pt-5" alt="">
 </div>
 
 </section>
